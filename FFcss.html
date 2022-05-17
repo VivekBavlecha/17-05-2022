@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS</title>
+    <style>
+        div{
+               
+            transition:3s;
+            font-size:25px;
+            font-weight:bold;
+            color:#000000;
+                
+        }
+        
+        #s1, #s2, #s3, #s4, #s5{
+            height: 400px; margin-bottom: 25px;
+        }
+        #s1m1, #s1m2,  #s2a1, #s2a2,  #s3b1, #s3b2, #s4c1, #s4c2, #s5d1, #s5d2{
+            width: 100%; height: 380px; 
+        }
+        #s1m1, #s1m2{
+            background-color: aqua;
+        }
+        #s2a1, #s2a2{
+            background-color: chartreuse;
+        }
+        #s3b1, #s3b2{
+            background-color: rgb(201, 26, 228);
+        }
+        #s4c1, #s4c2{
+            background-color: darkslategray;
+        }
+        #s5d1, #s5d2{
+            background-color: lightpink;
+        }
+        #s1m1, #s2a1, #s3b1, #s4c1, #s5d1{
+            width: 49%; margin-right: 2%; float: left; padding-top: 20px;
+        }
+        #s1m2, #s2a2, #s3b2, #s4c2, #s5d2{
+            width: 49%; float: left; padding-top: 20px;
+        }
+        #s1m1j1, #s1m2j2, #s2a1j1, #s2a2j2, #s3b1j1, #s3b2j2, #s4c1j1, #s4c2j2, #s5d1j1, #s5d2j2{
+            width: 90%; float: left; background-color: blueviolet; height: 300px; margin-left: 5%; margin-right: 5%; text-align: center; padding-top: 60px;
+        }
+        #s1m1 :hover{
+            -webkit-transform:translate(100px,100px);
+                   -moz-transform:translate(100px,100px);
+                    -ms-transform:translate(100px,100px);
+                     -o-transform:translate(100px,100px);
+                        transform:translate(100px,100px);
+                      background-color:rgb(40, 40, 158);
+                      color:rgb(109, 109, 70); 
+        }
+        #s1m2 :hover{
+            -webkit-transform:rotate(360deg);
+                   -moz-transform:rotate(360deg);
+                    -ms-transform:rotate(360deg);
+                     -o-transform:rotate(360deg);
+                        transform:rotate(360deg);
+                      background-color:rgb(191, 237, 55);
+                      color:rgb(228, 49, 201); 
+        }
+        #s2a1 :hover{
+            -webkit-transform:rotate3d(1,2,0,360deg);
+                   -moz-transform:rotate3d(1,2,0,360deg);
+                    -ms-transform:rotate3d(1,2,0,360deg);
+                     -o-transform:rotate3d(1,2,0,360deg);
+                        transform:rotate3d(1,2,0,360deg);
+                      background-color:rgb(232, 232, 244);
+                      color:rgb(144, 61, 240); 
+        }
+        #s2a2 :hover{
+            -webkit-transform:skew(50deg); 
+                   -moz-transform:skew(50deg); 
+                    -ms-transform:skew(50deg);
+                     -o-transform:skew(50deg);
+                        transform:skew(50deg);
+                      background-color:rgb(68, 242, 190);
+                      color:rgb(237, 45, 128);
+        }
+        #s3b1 :hover{
+            -webkit-transform:scale(1.6,0.4);
+                   -moz-transform:scale(1.6,0.4);
+                    -ms-transform:scale(1.6,0.4);
+                     -o-transform:scale(1.6,0.4);
+                        transform:scale(1.6,0.4);
+                      background-color:rgb(220, 191, 32);
+                      color:rgb(0, 115, 255); 
+        }
+        #s3b2 :hover{
+            opacity:0.1;
+        }
+        #s4c1 :hover{
+            background:rgba(18, 236, 73, 0.5);
+        }
+        #s4c2 :hover{
+            box-shadow:0px 0px 30px rgb(11, 237, 22);
+        }
+        #s5d1 :hover{
+            text-shadow:3px 3px 3px yellow;
+        }
+        #s5d2 :hover{
+            border-radius:50%;
+            text-shadow:3px 3px 3px rgb(221, 150, 17);
+        }
+        #s6{
+            width: 25%; height: 100px; padding-top: 30px; background-color: aqua;
+            overflow: scroll;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="s1">
+        <div id="s1m1">
+            <div id="s1m1j1">Hello<br>Touch and See Magic</div>
+        </div>
+        <div id="s1m2">
+            <div id="s1m2j2">Hello<br>Touch and See Magic</div>
+        </div>
+    </div>
+    <div id="s2">
+        <div id="s2a1">
+            <div id="s2a1j1">Hello<br>Touch and See Magic</div>
+        </div>
+        <div id="s2a2">
+            <div id="s2a2j2">Hello<br>Touch and See Magic</div>
+        </div>
+    </div>
+    <div id="s3">
+        <div id="s3b1">
+            <div id="s3b1j1">Hello<br>Touch and See Magic</div>
+        </div>
+        <div id="s3b2">
+            <div id="s3b2j2">Hello<br>Touch and See Magic</div>
+        </div>
+    </div>
+    <div id="s4">
+        <div id="s4c1">
+            <div id="s4c1j1">Hello<br>Touch and See Magic</div>
+        </div>
+        <div id="s4c2">
+            <div id="s4c2j2">Hello<br>Touch and See Magic</div>
+        </div>
+    </div>
+    <div id="s5">
+        <div id="s5d1">
+            <div id="s5d1j1">Hello<br>Touch and See Magic</div>
+        </div>
+        <div id="s5d2">
+            <div id="s5d2j2">Hello<br>Touch and See Magic</div>
+        </div>
+    </div>
+    <div id="s6">Afghanistan Albania Algeria Armenia Australia Austria Azerbaijan Bahamas Belgium Bolivia Bulgaria Burundi China Colombia Croatia Cyprus Denmark Dominica Ecuador Eritrea Estonia France Germany Guyana Iceland India Indonesia Iran Iraq Ireland Italy</div>
+    
+</body>
+</html>
